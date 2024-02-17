@@ -1,0 +1,6 @@
+<h2>Simple-Template</h2>
+<div class="btn btn-primary" (click)="toggleDynamicComponent()">Toggle Dynamic Component</div>
+
+<ng-container *ngIf="showDynamicComponent">
+  <app-dynamic></app-dynamic> <!-- Use the selector of DynamicComponent -->
+</ng-container>
